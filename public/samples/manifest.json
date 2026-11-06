@@ -1,0 +1,48 @@
+{
+  "invoices": [
+    {
+      "file": "factura-lacteos-A10482.pdf",
+      "title": "Lácteos Valle Sereno · A-10482 (PDF limpio)",
+      "expected": "Validación automática"
+    },
+    {
+      "file": "factura-granos-GA-7731.pdf",
+      "title": "Granos del Altiplano · GA-7731 (PDF limpio)",
+      "expected": "Validación automática"
+    },
+    {
+      "file": "foto-factura-lacteos-A10482.jpg",
+      "title": "Foto de la factura A-10482 (reenvío desde sucursal)",
+      "expected": "Duplicado de folio → revisión"
+    },
+    {
+      "file": "factura-empaques-ER-2219.pdf",
+      "title": "Empaques Ríos Unidos · ER-2219",
+      "expected": "Total no cuadra → revisión"
+    },
+    {
+      "file": "foto-factura-higiene-HT-0915.jpg",
+      "title": "Higiene Total · HT-0915 (foto inclinada y oscura)",
+      "expected": "Confianza variable"
+    },
+    {
+      "file": "factura-solponiente-SP-311.pdf",
+      "title": "Sol Poniente · SP-311",
+      "expected": "Proveedor no registrado → revisión"
+    }
+  ],
+  "images": [
+    {
+      "file": "etiqueta-producto.jpg",
+      "title": "Etiqueta de producto con lote y caducidad"
+    },
+    {
+      "file": "producto-anaquel.jpg",
+      "title": "Anaquel con huecos de inventario"
+    },
+    {
+      "file": "foto-factura-higiene-HT-0915.jpg",
+      "title": "Factura fotografiada con celular"
+    }
+  ]
+}

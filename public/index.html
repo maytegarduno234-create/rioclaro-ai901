@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cauce · Distribuidora Río Claro</title>
+  <meta name="description" content="Piloto AI-901: operaciones inteligentes con Microsoft Foundry y Azure AI para Distribuidora Río Claro (empresa ficticia).">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d5c69'/%3E%3Cpath d='M6 20c4-6 8 2 12-3s6-2 8-1' stroke='%23fff' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 15c3-5 6 1 9-2.5S17 10 21 11"/><path d="M3 19c3-3 6 1 9-1.5s5-1.5 9-1" opacity=".6"/></svg></div>
+        <div><div class="brand-name">Cauce</div><div class="brand-sub">Distribuidora Río Claro</div></div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot">
+        Piloto <strong>AI-901</strong> · Microsoft Foundry + Azure AI<br>
+        <span>Empresa y datos ficticios</span>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="btn btn-ghost icon-btn menu-btn" id="menuBtn" aria-label="Abrir menú"><svg class="i" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <div>
+          <div class="crumb" id="crumb">Cauce</div>
+          <h1 id="pageTitle">Bienvenida</h1>
+        </div>
+        <div class="spacer"></div>
+        <div class="context">
+          <label class="sr-only" for="roleSelect">Perfil</label>
+          <select class="select" id="roleSelect" title="Perfil de acceso (demostración)"></select>
+          <label class="sr-only" for="branchSelect">Sucursal</label>
+          <select class="select" id="branchSelect" title="Sucursal activa"></select>
+        </div>
+      </header>
+      <main class="content" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" aria-modal="true" role="dialog">
+    <header><h2 id="drawerTitle" style="font-size:16px"></h2><div class="spacer" style="flex:1"></div><button class="btn btn-ghost icon-btn" id="drawerClose" aria-label="Cerrar"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
+    <div class="body" id="drawerBody"></div>
+  </aside>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

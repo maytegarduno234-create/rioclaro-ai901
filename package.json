@@ -1,0 +1,22 @@
+{
+  "name": "rio-claro-operaciones",
+  "version": "1.0.0",
+  "description": "Cauce: piloto AI-901 de operaciones inteligentes para Distribuidora Río Claro (empresa ficticia) con Microsoft Foundry y Azure AI",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}

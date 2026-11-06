@@ -137,7 +137,7 @@ Pruebas ejecutadas contra la aplicación publicada:
 
 ![Asistente: consulta de pedido como Cliente](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/03-asistente-pedido.png)
 
-**4. Asistente: evidencia insuficiente.** Cuando las herramientas no devuelven datos suficientes, el asistente lo declara y el caso pasa a revisión humana.
+**4. Asistente: evidencia insuficiente.** Ante una pregunta que sus herramientas no pueden responder con certeza, el asistente no inventa una lista: declara que no tiene evidencia suficiente y envía el caso a revisión humana.
 
 ![Asistente: evidencia insuficiente](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/04-asistente-sin-evidencia.png)
 
@@ -157,13 +157,17 @@ Pruebas ejecutadas contra la aplicación publicada:
 
 ![Análisis de quejas](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/08-quejas.png)
 
-**9. Voz y visión.** Análisis de imágenes con Azure AI Vision y Foundry multimodal, y acceso a la consulta por voz.
+**9. Voz y visión.** Foto de un anaquel: Azure AI Vision extrae etiquetas y texto (OCR) y Foundry multimodal interpreta la escena, detecta el espacio vacío del nivel 2 y sugiere reponerlo. La sugerencia queda marcada para revisión.
 
 ![Voz y visión](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/09-voz-vision.png)
 
 **10. Revisión humana.** Cola única de casos dudosos: facturas, respuestas sin evidencia o con conflicto y clasificaciones con baja confianza. Se aprueban, corrigen o rechazan con nota.
 
 ![Revisión humana](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/10-revision-humana.png)
+
+**11. Configuración e IA responsable.** Verificación en vivo de los seis servicios de Azure con su latencia, principios de IA responsable aplicados y matriz de acceso por perfil.
+
+![Configuración e IA responsable](https://raw.githubusercontent.com/maytegarduno234-create/rioclaro-ai901/main/docs/capturas/11-ia-responsable.png)
 
 ## 6. IA responsable
 
@@ -236,6 +240,14 @@ public/                       Interfaz web (HTML, CSS y JS sin dependencias exte
 public/samples/               Facturas e imágenes de muestra ficticias
 ```
 
-## 11. Herramientas de asistencia utilizadas
+## 11. Autoría y herramientas utilizadas
 
-El diseño, el código y esta documentación se desarrollaron con apoyo de un asistente de IA (Claude, de Anthropic) operando bajo la dirección y supervisión de la autora del proyecto, quien definió requisitos, restricciones, presupuesto y aprobó cada recurso creado en Azure. Los commits del repositorio conservan la autoría real del entorno donde se generaron. La solución en ejecución utiliza exclusivamente servicios de Microsoft Azure.
+**Autora:** María Teresa Hernández Garduño.
+
+Mi trabajo en el proyecto:
+- Definí el caso de negocio, los requisitos, las restricciones de seguridad y el presupuesto máximo.
+- Elegí y aprobé la arquitectura y cada recurso creado en mi suscripción de Azure, y reutilicé mi recurso existente de Microsoft Foundry.
+- Configuré y validé el despliegue en Azure App Service y la alerta de presupuesto.
+- Probé los flujos como evaluadora, incluida la consulta por voz, tomé las capturas y publiqué el repositorio.
+
+Herramientas de asistencia: usé un asistente de programación con IA (Claude, de Anthropic) para generar y depurar el código y redactar la documentación bajo mis instrucciones. Revisé y probé los resultados antes de entregarlos. La solución en ejecución usa exclusivamente servicios de Microsoft Azure.
